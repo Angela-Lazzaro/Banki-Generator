@@ -7,20 +7,16 @@
   h-full w-full rounded-3xl
   shadow-questionshadow
   flex flex-col justify-between
-  p-6
+  py-6 px-10
 }
 
 .card-text {
-  @apply text-left w-11/12 h-auto
+  @apply max-w-[98%] h-[35rem] text-base lg:text-lg/6
+  overflow-y-auto max-h-[98%] text-slate-300 flex flex-col justify-center items-center
 }
 
-.answer-list {
-  @apply overflow-y-auto max-h-[26rem]
-}
-
-.card-btn {
-  @apply justify-center
-  w-auto mx-auto  max-h-[49px]
+.question {
+  @apply font-extrabold w-auto
 }
 
 .card-shape {
@@ -30,10 +26,3 @@
 /*********
 /* COLUMNS
 *********/
-
-.question-column-1, .question-column-2 {
-  @apply w-60 flex flex-col
-}
-.button-container {
-  @apply mb-4;
-}
